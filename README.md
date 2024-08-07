@@ -8,7 +8,7 @@ Chainlink CCIP (Cross-Chain Interoperability Protocol) is the industry-leading c
 
 ### Exercise Details
 
-In these exercises, you will deploy a set of contracts to different blockchain test networks:
+In these exercises, you will deploy a set of contracts (actually, it is the same contract) to different blockchain test networks:
 
 - **Sender Contract**: Deployed to Avalanche Fuji.
 - **Receiver Contract**: Deployed to Ethereum Sepolia.
@@ -56,8 +56,8 @@ Before getting started, make sure you have the following installed:
    Deploy the sender contract to Avalanche Fuji and the receiver contract to Ethereum Sepolia:
 
    ```bash
-   npx hardhat run scripts/deploySender.js --network avalancheFuji
-   npx hardhat run scripts/deployReceiver.js --network sepolia
+   npx hardhat run scripts/deploySender.js --network avalanche_fuji
+   npx hardhat run scripts/deployReceiver.js --network ethereum_sepolia
    ```
 
    The deployment scripts are located in the `scripts` folder and assume you've configured Hardhat networks in `hardhat.config.js`.
