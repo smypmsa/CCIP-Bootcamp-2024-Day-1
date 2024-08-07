@@ -26,28 +26,28 @@ Before getting started, make sure you have the following installed:
 
 1. **Clone the Repository**
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/your-username/ccip-bootcamp-day1.git
    cd ccip-bootcamp-day1
-   \`\`\`
+   ```
 
 2. **Install Dependencies**
 
    Navigate to the project directory and run:
 
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 
 3. **Configure Environment Variables**
 
-   Create a \`.env\` file in the project root and add the following environment variables:
+   Create a `.env` file in the project root and add the following environment variables:
 
-   \`\`\`plaintext
+   ```plaintext
    AVALANCHE_FUJI_RPC_URL=<your-avalanche-fuji-rpc-url>
    SEPOLIA_RPC_URL=<your-sepolia-rpc-url>
    PRIVATE_KEY=<your-wallet-private-key>
-   \`\`\`
+   ```
 
    Make sure you replace the placeholders with your actual RPC URLs and private key. You can create account on [Chainstack](https://chainstack.com/) and get required nodes. 
 
@@ -55,12 +55,12 @@ Before getting started, make sure you have the following installed:
 
    Deploy the sender contract to Avalanche Fuji and the receiver contract to Ethereum Sepolia:
 
-   \`\`\`bash
+   ```bash
    npx hardhat run scripts/deploySender.js --network avalancheFuji
    npx hardhat run scripts/deployReceiver.js --network sepolia
-   \`\`\`
+   ```
 
-   The deployment scripts are located in the \`scripts\` folder and assume you've configured Hardhat networks in \`hardhat.config.js\`.
+   The deployment scripts are located in the `scripts` folder and assume you've configured Hardhat networks in `hardhat.config.js`.
 
 ### Useful Links
 
